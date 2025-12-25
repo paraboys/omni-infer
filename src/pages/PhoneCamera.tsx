@@ -116,7 +116,7 @@ const PhoneCamera = () => {
 
     toast({
       title: "Connected!",
-      description: "Your phone camera is now streaming to JARVIS",
+      description: "Your phone camera is now streaming to OMNI-INFER",
     });
   };
 
@@ -129,7 +129,7 @@ const PhoneCamera = () => {
     
     toast({
       title: "Disconnected",
-      description: "Stopped streaming to JARVIS",
+      description: "Stopped streaming to OMNI-INFER",
     });
   };
 
@@ -147,7 +147,7 @@ const PhoneCamera = () => {
             <Smartphone className="w-6 h-6 text-primary" />
           </div>
           <div>
-            <h1 className="font-display font-bold text-lg">JARVIS Camera</h1>
+            <h1 className="font-display font-bold text-lg">OMNI-INFER Camera</h1>
             <p className="text-sm text-muted-foreground">Stream your phone camera</p>
           </div>
         </div>
@@ -182,7 +182,7 @@ const PhoneCamera = () => {
             <div className="absolute inset-0 border-4 border-primary/30 animate-pulse" />
             <div className="absolute top-4 right-4 flex items-center gap-2 bg-primary/90 text-primary-foreground px-3 py-1.5 rounded-full">
               <Check className="w-4 h-4" />
-              <span className="text-sm font-medium">Connected to JARVIS</span>
+              <span className="text-sm font-medium">Connected to OMNI-INFER</span>
             </div>
           </motion.div>
         )}
@@ -219,18 +219,18 @@ const PhoneCamera = () => {
           {isConnected ? (
             <>
               <CameraOff className="w-5 h-5" />
-              Disconnect from JARVIS
+              Disconnect from OMNI-INFER
             </>
           ) : (
             <>
               <Smartphone className="w-5 h-5" />
-              Connect to JARVIS
+              Connect to OMNI-INFER
             </>
           )}
         </Button>
 
         <p className="text-xs text-center text-muted-foreground">
-          Open this page on your phone to use it as a camera for JARVIS.
+          Open this page on your phone to use it as a camera for OMNI-INFER.
           Make sure both devices are on the same browser session.
         </p>
       </div>
